@@ -1,6 +1,9 @@
 $(function() {
+
+
   $('select').on('change', function() {
 
+    $('img').switchClass("logolarge", "logosmall", 1000, "easeOutBounce");
     $.ajax({
 
       method: 'GET',
