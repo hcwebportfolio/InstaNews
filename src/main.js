@@ -15,10 +15,11 @@ $(function() {
               }).splice(0, 12);
 
               nytData.forEach(function(item, index) {
-                  $('.newsarticles').append('<div class="allart article-' + index + '"><div class="text"><a href="' + item.url + '"> ' + item.abstract + '</a></div></div>');
+                console.log(item);
+                  $('.all-categories').append('<div class="articlepics story-' + index + '"><div class="text"><a href="' + item.url + '"> ' + item.abstract + '</a></div></div>');
 
                   img = item.multimedia[4];
-                  $('.article-' + index).css('background-image', 'url("' + img.url + '")');
+                  $('.story-' + index).css('background-image', 'url("' + img.url + '")');
                   });
                 });
               });
