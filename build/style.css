@@ -1,4 +1,3 @@
-/*fonts*/
 @font-face {
   font-family: 'open sans';
   src: url("fonts/opensans/opensans-bold-webfont.eot");
@@ -27,39 +26,8 @@
   font-weight: normal;
   font-style: italic; }
 
-.text {
-  text-align: left;
-  line-height: 25px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6); }
-
-a {
-  width: 100%;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-family: 'open sans';
-  text-decoration: none; }
-
-.articlepics {
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: flex-end;
-  background-position: center center;
-  background-size: cover; }
-
-body {
-  font-size: 12px;
-  background-color: #000000;
-  text-align: center;
-  color: white;
-  /*font-family: 'open sans';*/ }
-
-p {
-  padding: 10px; }
-
 .headsmall {
+  display: flex;
   font-family: 'open sans';
   padding: 50px; }
 
@@ -81,17 +49,58 @@ p {
   height: auto;
   width: 100%; }
 
-.copyright {
-  font-family: 'open sans';
-  font-weight: normal;
-  font-style: normal;
-  height: 10vh;
-  color: #808080; }
-
 @media all and (min-width: 600px) {
+  .headsmall {
+    display: flex;
+    justify-content: center; }
   .logosmall {
     height: 75px;
     width: 75px; }
+  .headlarge {
+    flex-direction: row; } }
+
+@media all and (min-width: 1000px) {
+  .headsmall {
+    justify-content: flex-start; }
+  .headlarge {
+    flex-direction: row;
+    justify-content: flex-start;
+    /*padding: 30px;*/
+    height: 90vh; } }
+
+body {
+  font-size: 12px;
+  background-color: #000000;
+  text-align: center;
+  color: white; }
+
+.text {
+  text-align: left;
+  line-height: 25px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6); }
+  .text a {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'open sans';
+    text-decoration: none; }
+
+.articlepics {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-end;
+  background-position: center center;
+  background-size: cover; }
+
+.loading {
+  height: 50px;
+  width: 50px;
+  display: none; }
+
+@media all and (min-width: 600px) {
   .all-categories {
     height: 400px;
     display: flex;
@@ -99,23 +108,23 @@ p {
     width: 100%; }
   .articlepics {
     flex: 0 1 33.33%;
-    max-width: 33.33%; }
-  .headlarge {
-    flex-direction: row; } }
+    max-width: 33.33%; } }
 
 @media all and (min-width: 1000px) {
   .articlepics {
     flex: 0 1 25%;
-    max-width: 25%; }
-  .headlarge {
-    flex-direction: row;
-    justify-content: flex-start;
-    /*padding: 30px;*/
-    height: 90vh; }
+    max-width: 25%; } }
+
+.copyright {
+  font-family: 'open sans';
+  font-weight: normal;
+  font-style: normal;
+  height: 10vh;
+  color: #808080; }
+
+@media all and (min-width: 1000px) {
   .copyright {
     flex-direction: row;
     justify-content: flex-start;
     height: 10vh;
-    text-align: left; }
-  .tfront {
     text-align: left; } }

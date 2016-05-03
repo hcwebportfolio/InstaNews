@@ -4,36 +4,37 @@
     <meta charset="utf-8">
     <title>New York Times</title>
     <link rel="stylesheet" href="build/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="build/style.css">
   </head>
 
   <body>
     <!-- headlarge -->
-    <header class="headsmall tfront">
-      <div ><img class="logosmall" src="build/images/nyt-logo.svg" alt="NYTimesLogo"/></div>
+    <header class="headlarge tfront">
+      <div ><img class="logolarge" src="build/images/nyt-logo.svg" alt="NYTimesLogo"/></div>
       <!-- logolarge -->
       <div>
         <p>Choose a section:</p>
-        <select>
+        <select class="selection">
 
           <option value="" disabled="disabled" selected="selected">Please select a name</option>
-          <option value="1">World</option>
-          <option value="2">National</option>
-          <option value="2">Science</option>
-          <option value="2">Buisness</option>
-          <option value="2">Sports</option>
-          <option value="2">Fashion</option>
+          <option value="world">World</option>
+          <option value="national">National</option>
+          <option value="science">Science</option>
+          <option value="buisness">Buisness</option>
+          <option value="sports">Sports</option>
+          <option value="fashion">Fashion</option>
 
         </select>
       </div>
     </header>
     <div class="circleloader">
-    <img src="build/images/ajax-loader.gif" alt="Loading"  
+      <img class="loading" src="build/images/ajax-loader.gif" alt="Loading" >
     </div>
     <section class="all-categories">
     </section>
     <footer class="copyright">
-    <p >&copy; Copyright 2016 INSTANEWS</p>
+    <p ><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2016 INSTANEWS</p>
 
 <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

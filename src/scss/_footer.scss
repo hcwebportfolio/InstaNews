@@ -1,0 +1,13 @@
+.copyright{
+  font-family: 'open sans';
+  font-weight: normal;
+  font-style: normal;
+  height: 10vh;
+  color: #808080;
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 10vh;
+    text-align: left;
+    }
+}

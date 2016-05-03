@@ -1,0 +1,46 @@
+.text{
+  text-align:left;
+  line-height: 25px;
+  padding: 10px;
+  background: rgba(0,0,0,.6);
+  a {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'open sans';
+    text-decoration: none;
+
+  }
+}
+
+.all-categories {
+ height: 400px;
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+}
+
+
+.articlepics{
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-end;
+  background-position: center center;
+  background-size: cover;
+  @include tablet {
+    flex: 0 1 33.33%;
+  max-width: 33.33%;
+
+  }
+  @include desktop {
+    flex: 0 1 25%;
+    max-width: 25%;
+    }
+}
+.loading{
+  height: 50px;
+  width: 50px;
+  display: none;
+}
