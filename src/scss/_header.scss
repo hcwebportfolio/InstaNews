@@ -7,6 +7,9 @@
     justify-content: center;
 
   }
+  @include desktop {
+     justify-content: flex-start;
+  }
 
 }
 .headlarge{
@@ -18,7 +21,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-start;
+    /*padding: 30px;*/
+    height: 90vh;
+  }
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 
@@ -36,28 +47,3 @@
   height: auto;
   width: 100%;
 }
-@media all and (min-width:600px){
-    .headsmall{
-    display: flex;
-    justify-content: center;
-    }
-
-   .logosmall{
-     height: 75px;
-     width: 75px;
-   }
-   .headlarge{
-     flex-direction: row;
- }
- }
- @media all and (min-width:1000px){
-   .headsmall {
-     justify-content: flex-start;
-   }
-   .headlarge{
-     flex-direction: row;
-     justify-content: flex-start;
-     /*padding: 30px;*/
-     height: 90vh;
-     }
-   }
