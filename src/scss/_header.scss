@@ -2,13 +2,18 @@
   display: flex;
   font-family: 'open sans';
   padding: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   @include tablet {
     display: flex;
     justify-content: center;
-
+    align-items: center;
   }
   @include desktop {
-     justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
 }
@@ -31,7 +36,6 @@
     flex-direction: row;
   }
 }
-
 
 
 .logosmall{
