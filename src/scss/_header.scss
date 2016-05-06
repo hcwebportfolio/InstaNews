@@ -2,13 +2,17 @@
   display: flex;
   font-family: 'open sans';
   padding: 50px;
+  align-items: center;
+  justify-content: center;
   @include tablet {
     display: flex;
     justify-content: center;
-
+    align-items: center;
   }
   @include desktop {
-     justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
 }
@@ -24,14 +28,16 @@
   @include desktop {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     /*padding: 30px;*/
     height: 90vh;
   }
   @include tablet {
+    display: flex;
+    align-items: center;
     flex-direction: row;
   }
 }
-
 
 
 .logosmall{
@@ -40,7 +46,6 @@
   @include tablet {
    height: 75px;
    width: 75px;
-
   }
 }
 .logolarge {

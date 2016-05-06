@@ -4,6 +4,8 @@ $(function() {
     $('header').switchClass("headlarge", "headsmall", 1000, "easeOutQuad");
     $('img').switchClass("logolarge", "logosmall", 1000, "easeOutQuad");
 
+
+
     $(".all-categories").empty();
     $('.loading').show();
 
