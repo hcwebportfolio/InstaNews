@@ -29,7 +29,8 @@
 .headsmall {
   display: flex;
   font-family: 'open sans';
-  padding: 50px; }
+  padding: 50px;
+  align-items: center; }
 
 .headlarge {
   font-family: 'open sans';
@@ -52,7 +53,8 @@
 @media all and (min-width: 600px) {
   .headsmall {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;}
   .logosmall {
     height: 75px;
     width: 75px; }

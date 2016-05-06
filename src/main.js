@@ -1,11 +1,9 @@
 $(function() {
   $('select').on('change', function() {
 
-    $('header').switchClass(".headlarge", ".headsmall", 1000, "easeOutQuad");
-    $('img').switchClass(".logolarge", ".logosmall", 1000, "easeOutQuad");
-    // You were missing the . infront of the class names in the switchClass
-    // statements above. I added them in and it lets the header and logo shrink
-    // to how you had it styled in your SCSS. 
+    $('header').switchClass("headlarge", "headsmall", 1000, "easeOutQuad");
+    $('img').switchClass("logolarge", "logosmall", 1000, "easeOutQuad");
+
 
 
     $(".all-categories").empty();
